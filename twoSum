@@ -7,3 +7,4 @@
         map.set(nums[index], index)
 }
 }
+console.log(twoSum([2,7,1,8.9],9));
