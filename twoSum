@@ -1,0 +1,9 @@
+ function twoSum (nums,target){
+    const map =new Map()
+   for (const index in nums){
+   //let pairTarget = target - nums[index];
+   const pairNumber = target - nums[index]
+ if (map.has(pairNumber)) return [parseInt(index), parseInt(map.get(pairNumber))]
+        map.set(nums[index], index)
+}
+}
