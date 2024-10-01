@@ -1,0 +1,12 @@
+function maxSubArray(nums) {
+    let sm = 0
+    let max = nums[0]
+
+    nums.forEach((n) => {
+        sm += n
+        max = Math.max(sm, max)
+        if (sm < 0) sm = 0
+    })
+
+    return max
+};
